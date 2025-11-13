@@ -3,9 +3,8 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # config/environments/production.rb. the code below should not be necessaryy
   # If you generated the app with the default config/database.yml, it already falls back to ENV['DATABASE_URL'].
-config.active_record.database_configuration = {
-  production: ENV['DATABASE_URL']
-}
+#config.active_record.database_configuration = {
+ # production: ENV['DATABASE_URL']}
 
   # Settings specified here will take precedence over those in config/application.rb.
 
