@@ -80,14 +80,15 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #below is the original production entry
-#production:
-#  <<: *default
- # database: mysite_production
- # username: mysite
- # password: <%= ENV["MYSITE_DATABASE_PASSWORD"] %>
-#
 production:
   <<: *default
-  dtabase: <%= ENV["POSTGRES_DB"]%>
+  database: mysite_production
+  username: mysite
+  password: <%= ENV["MYSITE_DATABASE_PASSWORD"] %>
+#
+#rolled the below back to what is the oroginal above
+#production:
+ # <<: *default
+  #dtabase: <%= ENV["POSTGRES_DB"]%>
     # Render will inject the above vars for you at runtime
   
