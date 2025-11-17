@@ -11,10 +11,10 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.enable_reloading = false
 # config/environments/production.rb.   
-# this was manually added 17 Nov 2025
-  config.active_record.database_configuration = {
-    production: ENV['DATABASE_URL']
-}
+# this was manually added 17 Nov 2025 and rolled back
+  #config.active_record.database_configuration = {
+  #  production: ENV['DATABASE_URL']
+ # }
   # Eager load code on boot for better performance and memory savings (ignored by Rake tasks).
   config.eager_load = true
 
